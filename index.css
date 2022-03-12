@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.talking-wrapper{
+    width: 600px;
+    max-height: 600px;
+    height: 100vh;
+    margin: 20px auto;
+    border:2px solid rgb(252,246,248) ;
+}
+.talking-wrapper .amount{
+    height: 50px;
+    width: 600px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(252,148,188);
+    background-color: rgb(255,255,255);
+    font-size: 20px;
+    border-bottom:2px solid rgb(252,246,248) ;
+    position: fixed;
+    top: 0;
+}
+.talking-wrapper .content{
+    background-color: rgb(254,235,241);
+    font-size: 16px;
+    color: rgb(245,205,221);
+    min-height: 610px;
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-top: 50px;
+}
+.content::-webkit-scrollbar{
+    width: 0;
+}
+.content  img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.content .text{
+    max-width: 150px;
+    box-shadow: 0px 3px 8px 3px  rgb(245,205,221);
+    color: rgb(237,206,218);
+    background-color: rgb(255,255,255);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 30px;
+}  
+.content .rabot{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.content .rabot .text{
+    margin-left: 10px;
+    position: relative;
+}
+.content .rabot .text::before{
+    content:'';
+    position: absolute;
+    border: 8px solid transparent;
+    left: -15px;
+    border-right: 8px solid rgb(255,255,255);
+}
+.content .mine{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.content .mine .text{
+    margin-right: 10px;
+    position: relative;
+}
+
+.content .mine .text::before{
+    content:'';
+    position: absolute;
+    border: 8px solid transparent;
+    right: -15px;
+    border-left: 8px solid rgb(255,255,255);
+}
+.input-wrapper{
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 600px;
+}
+.input-wrapper input{
+    outline: none;
+    width: 400px;
+    border-radius: 10px;
+    border:2px solid rgb(252,246,248) ;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding-left: 20px;
+}
+.input-wrapper button{
+    width: 80px;
+    background-color: rgb(252,148,188);
+    color: #fff;
+    border: rgb(237,206,218);
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
